@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Dynamic;
 using System.Text;
 
-//code first.
+//code first
 namespace ShoppingCart.Domain.Models
 {
     public class Product
