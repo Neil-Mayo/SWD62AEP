@@ -7,5 +7,6 @@ namespace ShoppingCart.Application.Interfaces
     interface IOrdersService
     {
         //void CheckOut(List<Product> productsInCart);
+        //
     }
 }
