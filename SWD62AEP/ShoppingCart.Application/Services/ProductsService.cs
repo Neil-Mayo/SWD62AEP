@@ -20,7 +20,7 @@ namespace ShoppingCart.Application.Services
 
         public IQueryable<ProductViewModel> GetProducts()
         {
-            //converting from Product into ProdcutViewModel.
+            //converting from Product into ProdcutViewModel
             var list = from p in _productRepo.GetProducts()
                        select new ProductViewModel()
                        {
