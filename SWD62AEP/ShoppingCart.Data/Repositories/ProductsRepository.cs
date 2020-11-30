@@ -16,6 +16,8 @@ namespace ShoppingCart.Data.Repositories
         {
             _context = context;
         }
+
+
         public void AddProduct(Product p)
         {
             _context.Products.Add(p);
@@ -32,12 +34,11 @@ namespace ShoppingCart.Data.Repositories
         public Product GetProduct(Guid id)
         {
             return _context.Products.SingleOrDefault(x => x.Id == id);
-            //if it does not find a product with a matching id....it will return null!!!!
+            //if it does not find a product with a matching id...it will return null!!!
         }
 
         public IQueryable<Product> GetProducts()
         {
-            
             return _context.Products;
         }
     }
